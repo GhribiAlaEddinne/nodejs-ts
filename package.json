@@ -4,16 +4,18 @@
   "description": "express + node + typescript + eslint",
   "main": "index.ts",
   "scripts": {
+    "prepare": "husky",
     "dev": "tsx --watch --env-file .env.development src/index.ts",
     "dev:staging": "tsx --watch --env-file .env.staging src/index.ts",
     "dev:prod": "tsx --watch --env-file .env.production src/index.ts",
     "start": "node --env-file .env dist/index.js",
-    "type-check": "tsc --noEmit",
     "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
