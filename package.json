@@ -8,7 +8,7 @@
     "dev:staging": "tsx --watch --env-file .env.staging src/index.ts",
     "dev:prod": "tsx --watch --env-file .env.production src/index.ts",
     "start": "node --env-file .env dist/index.js",
-    "typecheck": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
     "build": "tsc",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
